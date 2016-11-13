@@ -1,12 +1,18 @@
 // @flow
 
 import React, { Component } from 'react'
+import { Provider } from 'react-redux'
 import '../i18n/I18n' // keep before root container
+
 import RootContainer from './RootContainer'
+import createStore from '../redux'
 import applyConfigSettings from '../config'
 
 // Apply config overrides
 applyConfigSettings()
+// create our store
+const store = createStore()
+
 /**
  * Provides an entry point into our application.  Both index.ios.js and index.android.js
  * call this component first.
@@ -19,7 +25,9 @@ applyConfigSettings()
 class App extends Component {
   render () {
     return (
-      <RootContainer />
+      <Provider store={store}>
+        <RootContainer />
+      </Provider>
     )
   }
 }
