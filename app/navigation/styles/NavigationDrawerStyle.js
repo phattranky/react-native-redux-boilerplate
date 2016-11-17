@@ -4,7 +4,7 @@ import {Colors} from '../../themes/'
 
 export default {
   drawer: {
-    backgroundColor: Colors.background
+    backgroundColor: Colors.menuBackground
   },
   main: {
     backgroundColor: Colors.ember

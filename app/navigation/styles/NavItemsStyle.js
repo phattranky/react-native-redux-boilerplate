@@ -5,7 +5,8 @@ import { Metrics, Colors } from '../../themes/'
 
 export default StyleSheet.create({
   navButtonLeft: {
-    marginLeft: Metrics.baseMargin,
+    marginTop: -4,
+    marginLeft: 0,
     backgroundColor: Colors.transparent,
     width: Metrics.icons.medium
   }

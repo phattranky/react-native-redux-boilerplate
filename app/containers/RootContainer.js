@@ -33,20 +33,3 @@ const mapStateToDispatch = (dispatch) => ({
 
 export default connect(null, mapStateToDispatch)(RootContainer)
 
-// class RootContainer extends Component {
-//   render () {
-//     return (
-//       <View style={Styles.applicationView}>
-//         <StatusBar barStyle='light-content' />
-//         <Text style={Styles.welcome}>
-//           {i18n.t('welcome')}
-//         </Text>
-//         <View style={Styles.logoWrapper}>
-//           <Image style={Styles.logo} source={Images.logo} />
-//         </View>
-//       </View>
-//     )
-//   }
-// }
-
-// export default RootContainer
