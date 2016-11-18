@@ -33,7 +33,7 @@ class DrawerContent extends Component {
     return (
       <ScrollView style={styles.container}>
         <Image source={Images.logo} style={styles.logo} />
-        <DrawerButton text='Device Info' onPress={this.handlePressDevice} />
+        <DrawerButton style={styles.menuText} text='Device Info' onPress={this.handlePressDevice} />
       </ScrollView>
     )
   }

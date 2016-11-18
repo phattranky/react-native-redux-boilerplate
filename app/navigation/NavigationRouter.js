@@ -10,6 +10,7 @@ import CustomNavBar from '../components/CustomNavBar'
 // screens identified by the router
 import LoginScreen from '../containers/LoginScreen'
 import HomeScreen from '../containers/HomeScreen'
+import GalleryScreen from '../containers/GalleryScreen'
 import DeviceInfoScreen from '../containers/DeviceInfoScreen'
 
 /* **************************
@@ -25,6 +26,7 @@ class NavigationRouter extends Component {
             <Scene initial key='home' component={HomeScreen} title='AzNode' renderLeftButton={NavItems.hamburgerButton} />
             <Scene key='login' component={LoginScreen} title='Login' hideNavBar />
             <Scene key='deviceInfo' component={DeviceInfoScreen} title='Device Info' hideNavBar />
+            <Scene key='gallery' component={GalleryScreen} title='Gallery' />
           </Scene>
         </Scene>
       </Router>

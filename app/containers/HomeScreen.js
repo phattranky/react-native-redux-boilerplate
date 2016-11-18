@@ -4,6 +4,7 @@
 import React from 'react'
 import { View, Text, Image } from 'react-native'
 import I18n from 'react-native-i18n'
+import { Actions } from 'react-native-router-flux'
 
 import RoundedButton from '../components/RoundedButton'
 import RoundedImageCard from '../components/RoundedImageCard'
@@ -25,6 +26,7 @@ export default class HomeScreenStyle extends React.Component {
           onPress={() => window.alert('Rounded Button Pressed!')}
         />
         <RoundedImageCard
+          onPress={Actions.gallery}
           imageSrc={require('../images/tiger.jpg')}
           text="View gallery"
         />
