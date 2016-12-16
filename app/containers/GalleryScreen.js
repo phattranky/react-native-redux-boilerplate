@@ -10,7 +10,7 @@ import Styles from './styles/GalleryScreenStyle'
 export default class GalleryScreenStyle extends React.Component {
   render () {
     return (
-       <View>
+       <View style={Styles.mainContainer}>
         <Text>
           Hello World
         </Text>
